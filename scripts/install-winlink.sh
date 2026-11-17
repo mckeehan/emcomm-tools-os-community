@@ -7,7 +7,7 @@ set -e
 trap 'last_command=$current_command; current_command=$BASH_COMMAND' DEBUG
 trap 'et-log "\"${last_command}\" command failed with exit code $?."' ERR
 
-VERSION=1.0.0
+VERSION=1.0.1
 FILE="pat_${VERSION}_linux_amd64.deb"
 
 et-log "Installing Pat Winlink client version ${VERSION}..."
